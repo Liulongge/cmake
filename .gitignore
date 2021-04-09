@@ -1,0 +1,6 @@
+#               表示此为注释,将被Git忽略
+/cmake1/build/*
+/cmake2/build/*
+/cmake2/bin/*
+/cmake2/lib/*
+/cmake3/build/*
