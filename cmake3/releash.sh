@@ -5,7 +5,9 @@ rm -rf build
 rm -rf lib
 mkdir build
 cd build
-cmake ..
+cmake -DCMAKE_BUILD_TYPE="release" \
+		..
+# cmake ..
 make
 
 mkdir ../lib
