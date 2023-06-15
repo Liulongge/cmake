@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/runge.liu/Documents/code/studyCmake/cmake4/utils/utils.cpp
+utils.h
+/Users/runge.liu/Documents/code/studyCmake/cmake4/utils/utils.h
+
+/Users/runge.liu/Documents/code/studyCmake/cmake4/utils/utils.h
+iostream
+-
+string
+-
+
