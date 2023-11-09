@@ -1,0 +1,13 @@
+/Users/runge.liu/Documents/code/studyCmake/cmake5/build/CMakeFiles/rebuild_cache.dir
+/Users/runge.liu/Documents/code/studyCmake/cmake5/build/CMakeFiles/edit_cache.dir
+/Users/runge.liu/Documents/code/studyCmake/cmake5/build/math/CMakeFiles/rebuild_cache.dir
+/Users/runge.liu/Documents/code/studyCmake/cmake5/build/math/CMakeFiles/edit_cache.dir
+/Users/runge.liu/Documents/code/studyCmake/cmake5/build/math/CMakeFiles/math.dir
+/Users/runge.liu/Documents/code/studyCmake/cmake5/build/utils/CMakeFiles/rebuild_cache.dir
+/Users/runge.liu/Documents/code/studyCmake/cmake5/build/utils/CMakeFiles/edit_cache.dir
+/Users/runge.liu/Documents/code/studyCmake/cmake5/build/utils/CMakeFiles/utils.dir
+/Users/runge.liu/Documents/code/studyCmake/cmake5/build/main/CMakeFiles/demo_a.dir
+/Users/runge.liu/Documents/code/studyCmake/cmake5/build/main/CMakeFiles/rebuild_cache.dir
+/Users/runge.liu/Documents/code/studyCmake/cmake5/build/main/CMakeFiles/edit_cache.dir
+/Users/runge.liu/Documents/code/studyCmake/cmake5/build/main/CMakeFiles/demo_so.dir
+/Users/runge.liu/Documents/code/studyCmake/cmake5/build/main/CMakeFiles/demo.dir

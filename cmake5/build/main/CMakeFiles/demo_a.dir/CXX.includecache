@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/runge.liu/Documents/code/studyCmake/cmake5/main/main.cpp
+iostream
+-
+string
+-
+../math/add.h
+/Users/runge.liu/Documents/code/studyCmake/cmake5/math/add.h
+../utils/utils.h
+/Users/runge.liu/Documents/code/studyCmake/cmake5/utils/utils.h
+
+/Users/runge.liu/Documents/code/studyCmake/cmake5/math/add.h
+
+/Users/runge.liu/Documents/code/studyCmake/cmake5/utils/utils.h
+iostream
+-
+string
+-
+

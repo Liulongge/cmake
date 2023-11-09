@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/runge.liu/Documents/code/studyCmake/cmake5/math/add.cpp
+iostream
+-
+add.h
+/Users/runge.liu/Documents/code/studyCmake/cmake5/math/add.h
+
+/Users/runge.liu/Documents/code/studyCmake/cmake5/math/add.h
+
