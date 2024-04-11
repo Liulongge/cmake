@@ -15,6 +15,7 @@ target_link_libraries(bbb ccc)
 # $ nm libbbb.so | grep func
 # 0000000000001199 T _Z6func_bv
 # 000000000000128f t _Z6func_cv
+# 应用场景：静态库libccc.a已经编译出来, 符号全部为T, 与别的库中符号相同, 存在符号冲突, 避免函数执行出现问题
 # target_link_libraries(bbb -Wl,--exclude-libs,ALL ccc) ## -Wl,--exclude-libs,ALL  func_c变为小t(hidden), 仅在linux下支持
 # target_link_libraries(bbb -Wl,--exclude-libs=ALL ccc) ## -Wl,--exclude-libs=ALL  func_c变为小t(hidden), 仅在linux下支持
 # target_link_libraries(bbb ccc -Wl,--exclude-libs=ALL) ## -Wl,--exclude-libs=ALL  func_c变为小t(hidden), 仅在linux下支持
