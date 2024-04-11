@@ -11,8 +11,15 @@ add_library(aaa SHARED a.cc)
 add_library(bbb SHARED b.cc)
 add_library(ccc STATIC c.cc)
 target_link_libraries(bbb ccc)
-# target_link_libraries(bbb -Wl,--exclude-libs,ALL ccc) ## -Wl,--exclude-libs,ALL  func_c变为小t, 仅在linux下支持
-# target_link_libraries(bbb -Wl,--exclude-libs=ALL ccc) ## -Wl,--exclude-libs,ALL  func_c变为小t, 尽在linux下支持
+# 将动态库包含的静态库设置为hidden
+# target_link_libraries(bbb -Wl,--exclude-libs,ALL ccc) ## -Wl,--exclude-libs,ALL  func_c变为小t(hidden), 仅在linux下支持
+# target_link_libraries(bbb -Wl,--exclude-libs=ALL ccc) ## -Wl,--exclude-libs=ALL  func_c变为小t(hidden), 仅在linux下支持
+# target_link_libraries(bbb ccc -Wl,--exclude-libs=ALL) ## -Wl,--exclude-libs=ALL  func_c变为小t(hidden), 仅在linux下支持
+
+# target_link_libraries(bbb ccc)
+# target_link_options(bbb PRIVATE -Wl,--exclude-libs,ALL)
+
+
 # 生成可执行文件，需要链接
 target_link_directories(demo PRIVATE "${CMAKE_SOURCE_DIR}" )
 target_link_libraries(demo
