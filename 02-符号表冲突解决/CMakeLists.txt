@@ -12,6 +12,9 @@ add_library(bbb SHARED b.cc)
 add_library(ccc STATIC c.cc)
 target_link_libraries(bbb ccc)
 # 将动态库包含的静态库设置为hidden
+# $ nm libbbb.so | grep func
+# 0000000000001199 T _Z6func_bv
+# 000000000000128f t _Z6func_cv
 # target_link_libraries(bbb -Wl,--exclude-libs,ALL ccc) ## -Wl,--exclude-libs,ALL  func_c变为小t(hidden), 仅在linux下支持
 # target_link_libraries(bbb -Wl,--exclude-libs=ALL ccc) ## -Wl,--exclude-libs=ALL  func_c变为小t(hidden), 仅在linux下支持
 # target_link_libraries(bbb ccc -Wl,--exclude-libs=ALL) ## -Wl,--exclude-libs=ALL  func_c变为小t(hidden), 仅在linux下支持
